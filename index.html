@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>Презентация по курсу "Мультимедиа технологии"</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
@@ -14,18 +14,17 @@
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Презентация по курсу "Мультимедиа технологии"</h1>
+        <h1>Генетический алгоритм</h1>
+        <p>Студент группы ИУ3-31М</p>
     </header>
 
     <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
+        <h2>Генетический алгоритм в обучении с подкреплением</h2>
+        <p>Выполнил студент группы ИУ3-31М</p>
+        <p>Гатиятуллин Шамиль</p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
+            <img class="cover" src="pictures/back.jpg"  >
         </figure>
         <style>
             #cover h2 {
@@ -35,12 +34,12 @@
                 font-size: 70px;
             }
 
+
             #cover p {
-                margin: 10px 0 0;
-                text-align: center;
+                margin: 5px 0 0;
+                text-align: right;
                 color: white;
-                font-style: italic;
-                font-size: 20px;
+                font-size: 24px;
             }
 
             #cover p a {
@@ -48,158 +47,170 @@
             }
         </style>
     </section>
-
-    <section class="slide">
-        <h2>Shower key features</h2>
+    
+    <section class="slide" id="slide">
+        <h2>Обзор</h2>
         <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
+            <li>Генетический алгоритм</li>
+            <li>Описание</li>
+            <li>Код</li>
+            <li>Создание начальное популяции</li>
+            <li>Отбор</li>
+            <li>Скрещивание</li>
+            <li>Мутации</li>
+            <li>Эффективность алгоритма</li>
+            <li>Применение</li>
+            <li>Вывод</li>
         </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
     </section>
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+    <section class="slide" id="slide">
+        <h2>Генетический алгоритм</h2>
+        <p>Генетический алгоритм (англ. genetic algorithm) — это эвристический алгоритм поиска, 
+            используемый для решения задач оптимизации и моделирования путём случайного подбора, 
+            комбинирования и вариации искомых параметров с использованием механизмов, аналогичных 
+            естественному отбору в природе. Является разновидностью эволюционных вычислений, с помощью 
+            которых решаются оптимизационные задачи с использованием методов естественной эволюции, таких 
+            как наследование, мутации, отбор и кроссинговер.</p>
+    </section>      
+    
+    <section class="slide" id="slide">
+        <h2>Описание</h2>
+        <p>
+            Задача формализуется таким образом, чтобы её решение могло быть закодировано в виде вектора генов, 
+            где каждый ген может быть битом, числом или неким другим объектом. 
+            Cлучайным образом создаётся множество генотипов начальной популяции. Они оцениваются 
+            с использованием «функции приспособленности», в результате чего с каждым генотипом ассоциируется определённое значение («приспособленность»).</p>
+    </div>
     </section>
 
-    <section class="slide">
-        <h2>Two columns if you like</h2>
+    <section class="slide" id="slide">
+        <h2>Описание</h2>
         <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+        <p> Из полученного множества решений («поколения») с учётом значения «приспособленности» выбираются решения 
+            , к которым применяются «генетические операторы», результатом чего является получение новых решений.
+            </p>
+            <img src="pictures/alg.png" border = 1px align = "center">
         </div>
     </section>
 
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
+    <section class="slide" id="slide">
+        <h2>Алгоритм</h2>
+        <p>Таким образом, можно выделить следующие этапы генетического алгоритма:
+        </p>
+        <dl><dd>
+        <ol><li>Задать целевую функцию (приспособленности) для особей популяции</li>
+        <li>Создать начальную популяцию. </li>
+        <li>Начало алгоритма</li>
+        <li>Размножение (скрещивание)</li>
+        <li>Мутирование</li>
+        <li>Вычислить значение целевой функции для всех особей</li>
+        <li>Формирование нового поколения (селекция)</li>
+        <li>Если выполняются условия остановки, то (конец цикла), иначе (начало цикла).</li></ol></dl></dd>
     </section>
 
     <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Code samples</h2>
+        <h2>Пример кода</h2>
         <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
+            <code>def mutate_parent(net):</code>
+            <code>    new_net = copy.deepcopy(net)</code>
+            <code>    for p in new_net.parameters():</code>
+            <code>        noise = np.random.normal(size=p.data.size())</code>
+            <code>        noise_t = torch.FloatTensor(noise)</code>
+            <code>        p.data += NOISE_STD * noise_t</code>
+            <code>    return new_net</code>
         </pre>
     </section>
 
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
     <section class="slide" id="picture">
-        <h2>Pictures</h2>
+        <h2>Пример</h2>
         <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
+            <img class="cover" src="pictures/test.gif" >
         </figure>
         <style>
             #picture h2 {
-                color: white;
+                color: gray;
             }
         </style>
     </section>
 
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
-    </section>
-
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
+    <section class="slide" id="picture">
+        <figure>
+            <img class="cover" src="pictures/test2.jpg" >
+        </figure>
         <style>
-            #see-more h2 {
-                font-size: 100px
-            }
-
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
+            #picture h2 {
+                color: gray;
             }
         </style>
     </section>
 
-    <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
-    </footer>
+    <section class="slide" id="slide">
+        <h2>Создание начальной популяции</h2>
+        <p>
+            Перед первым шагом нужно случайным образом создать начальную популяцию; даже если она 
+            окажется совершенно неконкурентоспособной, вероятно, что генетический 
+            алгоритм всё равно достаточно быстро переведёт её в жизнеспособную популяцию. 
+            Таким образом, на первом шаге можно особенно не стараться сделать слишком уж 
+            приспособленных особей, достаточно, чтобы они соответствовали формату особей популяции, 
+            и на них можно было подсчитать функцию приспособленности.
+        </p>
+        <img src="pictures/population.jpg" >
+    </div>
+    </section>
+
+    <section class="slide" id="slide">
+        <h2>Отбор</h2>
+        <p>
+            На этапе отбора нужно из всей популяции выбрать определённую её долю, которая
+             останется «в живых» на этом этапе эволюции. Есть разные способы проводить отбор. Вероятность выживания особи h должна зависеть от значения функции приспособленности Fitness(h). Сама доля выживших 
+            s обычно является параметром генетического алгоритма, и её просто задают заранее. 
+            По итогам отбора из N особей популяции H должны остаться sN особей, которые войдут в 
+            итоговую популяцию H'. Остальные особи погибают.        </p>
+            <img src="pictures/selection.jpg" >
+    </div>
+    </section>
+
+    <section class="slide" id="slide">
+        <h2>Скрещивание</h2>
+        <p>
+            Размножение в разных алгоритмах определяется по-разному — оно, конечно, 
+            зависит от представления данных. Главное требование к размножению — чтобы потомок или 
+            потомки имели возможность унаследовать черты обоих родителей, «смешав» их каким-либо способом        </p>
+            <img src="pictures/recomb.jpg" >
+        </div>
+    </section>
+
+    <section class="slide" id="slide">
+        <h2>Мутации</h2>
+        <p>
+            К мутациям относится все то же самое, что и к размножению: есть 
+            некоторая доля мутантов m, являющаяся параметром генетического алгоритма, 
+            и на шаге мутаций нужно выбрать mN особей, а затем изменить их в соответствии 
+            с заранее определёнными операциями мутации.  </p>  
+            <img src="pictures/mutat.jpg" >
+        </div>
+    </section>
+
+    <section class="slide" id="slide">
+        <h2>Вывод</h2>
+        <p>
+            Прообраз генетического алгоритма пришёл из биологии и, несомненно, продолжает «подсматривать» оттуда ответы на многие вопросы, возникающие 
+            при проектированию эффективных реализаций генетических алгоритмов. Именно это позволяет нам производить работу по улучшения алгоритма, т.к. базовый пример с результатами уже вокруг нас.       </p>
+            
+        </div>
+    </section>
+
+    <style>
+        #slide p {
+            font-size: 18px;
+            font-style: normal;
+        }
+        #slide li {
+            font-size: 18px;
+            font-style: normal;
+        }
+    </style>
 
     <div class="progress"></div>
 
